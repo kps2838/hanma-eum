@@ -280,6 +280,10 @@ img{
     font-size: 22px;
 }
 
+#gallery .container .slide-btn > img:hover{
+    cursor: pointer;
+}
+
 #gallery .container .slide-btn > img:first-child{
     position: absolute;
     top: 188px;
@@ -305,7 +309,6 @@ img{
 
 #gallery .container .slide .slide-container > .images > img:not(:nth-child(4n)){
     margin-right: 53px;
-
 }
 
 #gallery .container .pagination{
