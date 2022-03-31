@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한마음동물보호센터</title>
+    <link rel="shortcut icon" href="./images/favicon.png"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <meta name="description" content="동물과 함께하는 행복한 내일, 한마음동물보호센터">  
+    <meta name="keywords" content="반려견, 반려묘, 강아지, 고양이, 분양, 반려동물, 반려동물보호센터, 강아지보호센터, 유기견, 유기묘 ">
+    <meta name="author" content="한마음동물보호센터">
+    <meta property="og:image" content="./images/screenshot.png">
+    <meta property="og:title" content="한마음동물보호센터">
+    <meta property="og:description" content="동물과 함께하는 행복한 내일, 한마음동물보호센터">
+</head>
+<body id="main">
+    <header id="main_header">
+        <h1 id="logo"><a href="#"><img src="./images/logo.png" alt="logo"></a></h1>
+        <nav id="top_menu">
+            <a href="#">HOME</a><span>|</span>
+            <a href="#">LOGIN</a><span>|</span>
+            <a href="#">JOIN</a>
+        </nav>
+        <nav id="gnb">
+            <ul>
+                <li><a href="#">센터 소개</a></li>
+                <li><a href="#">입양</a></li>
+                <li><a href="#">센터 소식</a></li>
+                <li><a href="#">커뮤니티</a></li>
+                <li><a href="#">오시는 길</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="main-banner">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide s1">
+                <div class="title-box">
+                    <h3>운영시간 AM11:00 ~ PM7:00</h3>
+                    <p>매주 월요일, 주말 및 공휴일은 휴일입니다.</p>
+                    <a href="#">오시는 길</a>
+                </div>
+            </div>
+            <div class="swiper-slide s2">
+                <div class="title-box">
+                    <h3>또 하나의 가족</h3>
+                    <p>사랑으로 안아주세요</p>
+                    <a href="#">입양하기</a>
+                </div>
+            </div>
+            <div class="swiper-slide s3">
+                <div class="title-box">
+                    <h3>후원해주세요</h3>
+                    <p>당신의 작은 관심이 필요합니다.
+                        후원을 통해 유기동물들을 도와주세요</p>
+                    <a href="#donation">후원하기</a>
+                </div>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    </section>
+
+    <main>
+        <section id="contents">
+            <div class="news">
+                <h3>What's New</h3>
+                <div class="btn">
+                    <button class="notice on">공지사항</button>
+                    <button class="community">커뮤니티</button>
+                    <a href="#"><img src="./images/plus_icon.svg" alt="더보기"></a>
+                </div>
+                <div class="text-box notice on">
+                    <div class="text">
+                        <a href="#">반려동물 유기 유실 예방 캠페인 안내</a>
+                        <p class="date">2022.02.26</p>
+                    </div>
+                    <div class="text">
+                        <a href="#">경기반려동물시민학교 프로그램 안내</a>
+                        <p class="date">2022.02.06</p>
+                    </div>
+                    <div class="text">
+                        <a href="#">시설 리모델링 안내</a>
+                        <p class="date">2022.01.22</p>
+                    </div>
+                    <div class="text">
+                        <a href="#">2021년 후원금 사용내역 보고</a>
+                        <p class="date">2022.01.08</p>
+                    </div>
+                </div>
+                <div class="text-box community">
+                    <div class="text">
+                        <a href="#">이번주에 자원봉사 가시는 분 있으신가요?</a>
+                        <p class="date">2022.02.22</p>
+                    </div>
+                    <div class="text">
+                        <a href="#">입양 절차에 대해서 질문이 있습니다.</a>
+                        <p class="date">2022.02.22</p>
+                    </div>
+                    <div class="text">
+                        <a href="#">강아지 배변훈련 도와주세요</a>
+                        <p class="date">2022.02.18</p>
+                    </div>
+                    <div class="text">
+                        <a href="#">용산에 괜찮은 동물병원이 추천해주세요</a>
+                        <p class="date">2022.01.24</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="volunteer">
+                <a href="#"><img src="./images/volunteer_banner.jpg" alt="자원봉사"></a>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="container">
+                <h3>갤러리</h3>
+                <a href="#">더보기<img src="./images/more_btn.svg" alt="더보기"></a>
+                <div class="slide-btn">
+                    <img src="./images/arrow-left.svg" alt="이전" class="prev">
+                    <img src="./images/arrow-right.svg" alt="이후" class="next">
+                </div>
+                <div class="slide">
+                    <div class="slide-container">
+                        <div class="images">
+                            <img src="./images/gallery01.jpg" alt="">
+                            <img src="./images/gallery02.jpg" alt="">
+                            <img src="./images/gallery03.jpg" alt="">
+                            <img src="./images/gallery04.jpg" alt="">
+                            <img src="./images/gallery05.jpg" alt="">
+                            <img src="./images/gallery06.jpg" alt="">
+                            <img src="./images/gallery07.jpg" alt="">
+                            <img src="./images/gallery08.jpg" alt="">
+                            <img src="./images/gallery09.jpg" alt="">
+                            <img src="./images/gallery10.jpg" alt="">
+                            <img src="./images/gallery11.jpg" alt="">
+                            <img src="./images/gallery12.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <div class="on"></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="adoption">
+            <h3>입양후기</h3>
+            <a href="#">더보기<img src="./images/more_btn.svg" alt="더보기"></a>
+            <div class="info-container">
+                <a href="#" class="info-box">
+                    <img src="./images/adoption01.jpg" alt="입양후기">
+                    <div class="text-box">
+                        <img src="./images/profile01.png" alt="프로필">
+                        <h4>냠냠이 입양후기</h4>
+                        <p class="date">2022.03.11</p>
+                        <p>저희 집의 새식구가 된 냠냠이! 벌써 표정이 밝아진게 보이시나요?? 저희 집 꽁이와 사이좋게 잘 지내는 것 같아서 너무 다행입니다. 집앞에서 뛰어..
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="info-box">
+                    <img src="./images/adoption02.jpg" alt="입양후기">
+                    <div class="text-box">
+                        <img src="./images/profile02.png" alt="프로필">
+                        <h4>순이는 잘 지냅니다</h4>
+                        <p class="date">2022.03. 02</p>
+                        <p>자원봉사를 하러 왔다가 눈에 밟혀서 데려오게 된 순이는 잘 지내고 있습니다. 처음에는 적응을 못 해 힘들어 하는 모습을 보였는데 이제는 제 침대..
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="info-box">
+                    <img src="./images/adoption03.jpg" alt="입양후기">
+                    <div class="text-box">
+                        <img src="./images/profile03.png" alt="프로필">
+                        <h4>영식이의 근황</h4>
+                        <p class="date">2022.02.26</p>
+                        <p>데려올 땐 애기였던 영식이가 어느새 이렇게 컸습니다! 밥도 잘 먹고 똥도 잘 싸고 소파도 잘 물어뜯고 벽지도 잘 긁으며 행복하게 지내고 있어요. .
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="donation">
+            <div class="title">
+                <h4>후원계좌</h4>
+                <p>국민은행 122-345-678910</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="text-box">
+            <ul class="ft-menu">
+                <li><a href="#">이용약관</a><span>|</span></li>
+                <li><a href="#"><b>개인정보취급방법</b></a><span>|</span></li>
+                <li><a href="#">이메일주소무단수집거부</a></li>
+            </ul>
+            <p class="info">서울특별시 용산구 후암로12길 34 ｜ 전화 : 02-1234-5678｜ 팩스 : 02-1234-5678 ｜ 사업자등록번호 : 012-34-56789 ｜ 대표 : 김영희</p>
+            <p class="copy">Copyright&copy;2021. Hanmaeum Animal Shelter All rights reserved. This is nonprofit site.</p>
+        </div>
+    </footer>
+
+
+<script src="./js/swiper.js"></script>
+</body>
+</html>

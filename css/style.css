@@ -1,0 +1,465 @@
+:root{
+    --main-color : #FD9347;
+}
+
+html {
+    scroll-behavior: smooth;
+  }  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+}
+
+#main_header{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 14px;
+    padding-bottom: 24px;
+    position: relative;
+}
+
+#main_header #top_menu{
+    position: absolute;
+    top: 14px;
+    right: 0; 
+}
+
+#main_header #top_menu a{
+    font-size: 12px;
+    color: #000;
+}
+
+#main_header #top_menu span{
+    margin: 0 15px;
+    font-size: 10px;
+    color: #666;
+}
+
+#main_header #gnb ul {
+    position: absolute;
+    top: 47px;
+    right: 0;
+}
+
+#main_header #gnb ul li{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+#main_header #gnb ul li:last-child{
+    margin-right: 0;
+}
+
+#main_header #gnb ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+
+#main_header #gnb ul li a:hover{
+    color: var(--main-color);
+}
+
+#main-banner{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+#main-banner .swiper{
+    width: 100%;
+    height: 700px;
+}
+
+#main-banner .swiper .swiper-wrapper .swiper-slide.s1{
+    background-image: url(../images/main-visual.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#main-banner .swiper .swiper-wrapper .swiper-slide.s2{
+    background-image: url(../images/main-visual2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#main-banner .swiper .swiper-wrapper .swiper-slide.s3{
+    background-image: url(../images/main-visual3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+#main-banner .swiper .swiper-wrapper .swiper-slide{
+    display: flex;
+    justify-content: center;
+}
+
+#main-banner .swiper .swiper-wrapper .swiper-slide .title-box{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 258px;
+}
+
+#main-banner .swiper .swiper-wrapper .swiper-slide h3{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 21px;
+}
+
+#main-banner .swiper .swiper-wrapper .swiper-slide p{
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+#main-banner .swiper .swiper-wrapper .swiper-slide a{
+    width: 180px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    line-height: 50px;
+}
+
+.swiper-pagination-bullet{
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.7) ;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #fff !important;
+}
+
+.swiper-pagination-bullet:not(:last-child){
+    margin-right: 43px !important;
+}
+
+.swiper-pagination {
+    bottom: 45px !important;
+}
+
+#contents{
+    width: 1200px;
+    margin: 0 auto;
+    height: 460px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contents .news{
+    width: 757px;
+    height: 330px;
+    background: #f4f4f4;
+    padding: 25px 35px;
+    position: relative;
+}
+
+#contents .news > h3{
+    font-size: 50px; 
+}
+
+#contents .btn{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 36px;
+    right: 35px;
+}
+
+#contents .btn > button{
+    border: none;
+    width: 120px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: rgb(253, 147, 71, 0.5);
+    color: #000;
+    font-size: 20px;
+}
+
+#contents .btn > button:hover{
+    cursor: pointer;
+    background-color: rgb(253, 147, 71);
+    color: #fff;
+}
+
+#contents .btn > button.on{
+    background-color: rgb(253, 147, 71);
+    color: #fff;
+
+}
+
+#contents .btn > button:nth-child(2){
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+#contents .text-box{
+    margin-top: 26px;
+    display: none;
+}
+
+#contents .text-box.on{
+    display: block;
+}
+
+#contents .text-box .text{
+    display: flex;
+}
+
+#contents .text-box .text:not(:last-child){
+    margin-bottom: 13px;
+}
+
+#contents .text-box .text a{
+    font-size: 22px;
+    color: #000;
+    margin-right: 77px;
+    display: block;
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#contents .text-box .text .date{
+    font-size: 22px;
+}
+
+#gallery{
+    height: 477px;
+    background-color: #FFF1E7;
+}
+
+#gallery > .container{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
+    position: relative;
+}
+
+#gallery > .container > h3{
+    font-size: 36px;
+}
+
+#gallery > .container > a{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    color: #000;
+    font-size: 20px;
+    right: 0;
+    top: 63px;
+}
+
+#gallery > .container > a:hover{
+    font-size: 22px;
+}
+
+#gallery .container .slide-btn > img:first-child{
+    position: absolute;
+    top: 188px;
+    left: -125px;
+}
+#gallery .container .slide-btn > img:last-child{
+    position: absolute;
+    top: 188px;
+    right: -125px;
+}
+
+#gallery .container .slide{
+    width: 1200px;
+    height: 250px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#gallery .container .slide .slide-container > .images{
+    display: flex;;
+    transition: all 0.7s;
+}
+
+#gallery .container .slide .slide-container > .images > img:not(:nth-child(4n)){
+    margin-right: 53px;
+
+}
+
+#gallery .container .pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#gallery .container .pagination > div{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(253, 147, 71, 0.5);
+}
+
+#gallery .container .pagination > div.on{
+    background-color: rgb(253, 147, 71);
+
+}
+
+#gallery .container .pagination > div:not(:last-child){
+    margin-right: 20px;
+}
+
+#adoption{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 95px;
+    position: relative;
+}
+
+#adoption > h3{
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+#adoption > a{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    color: #000;
+    font-size: 20px;
+    right: 0;
+    top: 78px;
+}
+
+#adoption > a:hover{
+    font-size: 22px;
+}
+
+#adoption .info-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#adoption .info-container .info-box{
+    width: 376px;
+    height: 450px;
+    border: 1px solid #999;
+    padding: 25px 27px;
+    color: #000;
+}
+
+#adoption .info-container .info-box:hover{
+    box-shadow: 4px 4px 8px #999;
+}
+
+#adoption .info-container .info-box > img{
+    margin-bottom: 12px;
+}
+
+#adoption .info-container .info-box .text-box{
+    position: relative;
+}
+
+#adoption .info-container .info-box .text-box >h4{
+    position: absolute;
+    top: 0;
+    left: 50.5px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#adoption .info-container .info-box .text-box > .date{
+    position: absolute;
+    top: 35px;
+    left: 50.5px;
+    font-size: 14px;
+}
+
+#adoption .info-container .info-box .text-box > p:last-child{
+    margin-top: 20px;
+    width: 320px;
+    height: 78px;
+    overflow: hidden;
+}
+
+#donation{
+    width: 100%;
+    height: 250px;
+    background-image: url(../images/donation-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#donation .title{
+    text-align: center;
+    color: #fff;
+}
+
+#donation .title > h4{
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#donation .title > p{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+#main-footer{
+    width: 100%;
+    height: 140px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#main-footer .ft-menu{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+}
+
+#main-footer .ft-menu > li > a{
+    color: #fff;
+}
+
+#main-footer .ft-menu > li > span{
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+#main-footer .text-box .info{
+    margin-bottom: 10px;
+}
