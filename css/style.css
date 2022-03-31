@@ -324,6 +324,15 @@ img{
     background-color: rgb(253, 147, 71, 0.5);
 }
 
+#gallery .container .pagination > div:hover{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: rgb(253, 147, 71, 0.8);
+    cursor: pointer;
+
+}
+
 #gallery .container .pagination > div.on{
     background-color: rgb(253, 147, 71);
 

@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>한마음동물보호센터</title>
     <link rel="shortcut icon" href="./images/favicon.png"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/main.js"></script>
     <meta name="description" content="동물과 함께하는 행복한 내일, 한마음동물보호센터">  
     <meta name="keywords" content="반려견, 반려묘, 강아지, 고양이, 분양, 반려동물, 반려동물보호센터, 강아지보호센터, 유기견, 유기묘 ">
@@ -162,7 +164,7 @@
             <h3>입양후기</h3>
             <a href="#">더보기<img src="./images/more_btn.svg" alt="더보기"></a>
             <div class="info-container">
-                <a href="#" class="info-box">
+                <a href="#" class="info-box" data-aos="fade-up" data-aos-duration="1000">
                     <img src="./images/adoption01.jpg" alt="입양후기">
                     <div class="text-box">
                         <img src="./images/profile01.png" alt="프로필">
@@ -172,8 +174,8 @@
                         </p>
                     </div>
                 </a>
-                <a href="#" class="info-box">
-                    <img src="./images/adoption02.jpg" alt="입양후기">
+                <a href="#" class="info-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <img src="./images/adoption02.jpg" alt="입양후기" >
                     <div class="text-box">
                         <img src="./images/profile02.png" alt="프로필">
                         <h4>순이는 잘 지냅니다</h4>
@@ -182,7 +184,7 @@
                         </p>
                     </div>
                 </a>
-                <a href="#" class="info-box">
+                <a href="#" class="info-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                     <img src="./images/adoption03.jpg" alt="입양후기">
                     <div class="text-box">
                         <img src="./images/profile03.png" alt="프로필">
@@ -217,5 +219,6 @@
 
 
 <script src="./js/swiper.js"></script>
+<script>AOS.init();</script>
 </body>
 </html>
