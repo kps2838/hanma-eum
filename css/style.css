@@ -181,7 +181,7 @@ img{
 }
 
 #contents .news > h3{
-    font-size: 50px; 
+    font-size: 40px; 
 }
 
 #contents .btn{
@@ -222,6 +222,7 @@ img{
 #contents .text-box{
     margin-top: 26px;
     display: none;
+    height: 187px;
 }
 
 #contents .text-box.on{
@@ -233,11 +234,11 @@ img{
 }
 
 #contents .text-box .text:not(:last-child){
-    margin-bottom: 13px;
+    margin-bottom: 10px;
 }
 
 #contents .text-box .text a{
-    font-size: 22px;
+    font-size: 20px;
     color: #000;
     margin-right: 77px;
     display: block;
@@ -247,7 +248,7 @@ img{
 }
 
 #contents .text-box .text .date{
-    font-size: 22px;
+    font-size: 20px;
 }
 
 #gallery{
