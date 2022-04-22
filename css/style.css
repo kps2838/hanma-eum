@@ -165,41 +165,30 @@ img{
 #contents{
     width: 1200px;
     margin: 0 auto;
-    height: 460px;
-    padding-top: 80px;
-    padding-bottom: 50px;
+    margin-top: 80px;
+    height: 360px;
     display: flex;
     justify-content: space-between;
 }
 
 #contents .news{
-    width: 757px;
-    height: 330px;
-    background: #f4f4f4;
-    padding: 25px 35px;
+    width: 387px;
+    height: 237px;
     position: relative;
-}
-
-#contents .news > h3{
-    font-size: 40px; 
 }
 
 #contents .btn{
     display: flex;
-    align-items: center;
-    position: absolute;
-    top: 36px;
-    right: 35px;
 }
 
 #contents .btn > button{
     border: none;
-    width: 120px;
-    height: 50px;
-    border-radius: 15px;
-    background-color: rgb(253, 147, 71, 0.5);
+    width: 101px;
+    height: 44.44px;
+    background-color: rgba(253, 147, 71, 0.5);
     color: #000;
     font-size: 20px;
+    font-weight: 500;
 }
 
 #contents .btn > button:hover{
@@ -211,18 +200,21 @@ img{
 #contents .btn > button.on{
     background-color: rgb(253, 147, 71);
     color: #fff;
-
 }
 
-#contents .btn > button:nth-child(2){
-    margin-right: 10px;
-    margin-left: 15px;
+#contents .btn > a{
+    color: #000;
+    position: absolute;
+    right: 14px;
+    top: 20px;
 }
 
 #contents .text-box{
-    margin-top: 26px;
+    width: 387px;
+    height: 192.56px;
+    background-color: rgba(253, 147, 71, 0.1);
+    padding: 23px 10px;
     display: none;
-    height: 187px;
 }
 
 #contents .text-box.on{
@@ -234,191 +226,474 @@ img{
 }
 
 #contents .text-box .text:not(:last-child){
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 #contents .text-box .text a{
-    font-size: 20px;
+    font-size: 14px;
     color: #000;
-    margin-right: 77px;
+    margin-right: 20px;
     display: block;
-    width: 500px;
+    width: 279px;
     white-space: nowrap;
     overflow: hidden;
 }
 
 #contents .text-box .text .date{
-    font-size: 20px;
+    font-size: 14px;
 }
 
-#gallery{
-    height: 477px;
-    background-color: #FFF1E7;
+#contents .map{
+    display: flex;
+    flex-direction: column;
 }
 
-#gallery > .container{
+#contents .map > h3{
+    text-align: center;
+    background-color: #FD9347;
+    color: #fff;
+    padding: 10px;
+}
+
+#about{
+    width: 100vw;
+    height: 400px;
+    background-color: rgb(253, 147, 71, 0.3);
+}
+
+#about .container{
     width: 1200px;
+    height: 100%;
     margin: 0 auto;
-    padding-top: 40px;
     position: relative;
 }
 
-#gallery > .container > h3{
-    font-size: 36px;
+#about > .container > img{
+    position: absolute;
+    width: 372px;
+    left: 0;
+    bottom: 0;
 }
 
-#gallery > .container > a{
+#about > .container{
     display: flex;
     align-items: center;
+}
+
+#about > .container > .title_box{
+    z-index: 2;
+    width: 400px;
+    text-align: center;
+    font-size: 40px;
+    color: #FD9347;
+    margin-right: 68px;
+}
+
+#about > .container > .title_box > p{
+    z-index: 2;
+    text-align: center;
+    font-size: 18px;
+    color: #5893BE;
+}
+
+#about > .container > .contents-box{
+    width: 750px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#about > .container > .contents-box > div > h3{
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+#about > .container > .contents-box > div:nth-child(2) > h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#about > .container > .contents-box div > p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#about > .container > .contents-box > div:nth-child(2) > p{
+    margin-bottom: 5px;
+}
+
+#center{
+    width: 1200px;
+    height: 325px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+}
+
+#center .title_box{
+    width: 285px;
+    height: 304px;
+    background-color: #FD9347;
+    color: #fff;
+    position: relative;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding-top: 74px;
+    margin-right: 20px;
+}
+
+#center .title_box > img{
+    width: 183px;
     position: absolute;
-    color: #000;
-    font-size: 20px;
-    right: 0;
-    top: 63px;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
 }
 
-#gallery > .container > a:hover{
-    font-size: 22px;
+#center .title_box h3{
+    position: relative;
+    font-size: 32px;
+    margin-bottom: 15px;
+    z-index: 3;
 }
 
-#gallery .container .slide-btn > img:hover{
+#center .title_box p{
+    position: relative;
+    font-size: 16px;
+    margin-bottom: 40px;
+    z-index: 3;
+}
+
+#center .title_box > button{
+    border: none;
+    background: #fff;
+    color: #FD9347;
+    font-size: 16px;
+    padding: 10px 43px;
+    z-index: 10;
+    position: relative;
+}
+
+#center .title_box > button:hover{
     cursor: pointer;
 }
 
-#gallery .container .slide-btn > img:first-child{
-    position: absolute;
-    top: 188px;
-    left: -125px;
-}
-#gallery .container .slide-btn > img:last-child{
-    position: absolute;
-    top: 188px;
-    right: -125px;
-}
-
-#gallery .container .slide{
-    width: 1200px;
-    height: 250px;
+#center .slide{
+    padding-top: 21px;
+    width: 895px;
+    height: 320px;
     overflow: hidden;
-    margin-top: 20px;
+    position: relative;
 }
 
-#gallery .container .slide .slide-container > .images{
-    display: flex;;
+#center .slide .slide-container > .images{
+    display: flex;
     transition: all 0.7s;
 }
 
-#gallery .container .slide .slide-container > .images > img:not(:nth-child(4n)){
-    margin-right: 53px;
+#center .slide .slide-container > .images > div{
+    position: relative;
 }
 
-#gallery .container .pagination{
+#center .slide .slide-container > .images > div .hover-box{
+    width: 285px;
+    height: 234.24px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    text-align: center;
+    padding-top: 57px;
+    display: none;
+}
+
+#center .slide .slide-container > .images > div .hover-box.on{
+    display: block;
+}
+
+#center .slide .slide-container > .images > div .hover-box > h3{
+    font-size: 20px;
+}
+
+#center .slide .slide-container > .images > div .hover-box > p{
+    font-size: 16px;
+}
+
+#center .slide .slide-container > .images > div .hover-box > p:last-child{
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+#center .slide .slide-container > .images > div:not(:nth-child(3n)){
+    margin-right: 20px;
+}
+
+#center .slide .slide-container > .images > div:hover{
+    cursor: pointer;
+}
+
+#center .slide .slide-btn{
+    position: absolute;
+    bottom: 6px;
+    right: 318px;
+    display: flex;
+    align-items: center;
+}
+
+#center .slide .slide-btn > img:hover{
+    cursor: pointer;
+}
+
+#center .slide .slide-btn > div{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
 }
 
-#gallery .container .pagination > div{
-    width: 25px;
-    height: 25px;
+#center .slide .slide-btn > div{
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: rgb(253, 147, 71, 0.5);
 }
 
-#gallery .container .pagination > div:hover{
+#center .slide .slide-btn > div:hover{
     width: 28px;
     height: 28px;
     border-radius: 50%;
     background-color: rgb(253, 147, 71, 0.8);
     cursor: pointer;
-
 }
 
-#gallery .container .pagination > div.on{
+#center .slide .slide-btn > div.on{
     background-color: rgb(253, 147, 71);
 
 }
 
-#gallery .container .pagination > div:not(:last-child){
-    margin-right: 20px;
+#center .slide .slide-btn > div:not(:nth-child(4)){
+    margin-right: 16px;
+}
+
+#center .slide .slide-btn > div:nth-child(4),#center .slide .slide-btn > img:first-child{
+    margin-right: 66.95px;
 }
 
 #adoption{
     width: 1200px;
-    height: 100%;
+    height: 320px;
     margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 95px;
     position: relative;
-}
-
-#adoption > h3{
-    font-size: 36px;
-    margin-bottom: 15px;
-}
-
-#adoption > a{
+    margin-top: 100px;
     display: flex;
-    align-items: center;
-    position: absolute;
-    color: #000;
-    font-size: 20px;
-    right: 0;
-    top: 78px;
 }
 
-#adoption > a:hover{
-    font-size: 22px;
-}
-
-#adoption .info-container{
+#adoption .container{
+    padding-top: 30px;
     display: flex;
+    width: 895px;
     justify-content: space-between;
+    margin-right: 20px;
 }
 
-#adoption .info-container .info-box{
-    width: 376px;
-    height: 450px;
+#adoption .container .info-box > div{
+    display: block;
+    width: 285px;
+    height: 250px;
     border: 1px solid #999;
-    padding: 25px 27px;
+    padding: 15px 20px;
     color: #000;
+    overflow: hidden;
+    transition: all 0.5s;
 }
 
-#adoption .info-container .info-box:hover{
-    box-shadow: 4px 4px 8px #999;
+#adoption .container .info-box > div:hover{
+    height: 340px;
+    cursor: pointer;
 }
 
-#adoption .info-container .info-box > img{
-    margin-bottom: 12px;
+#adoption .container .info-box div > img{
+    margin-bottom: 9px;
 }
 
-#adoption .info-container .info-box .text-box{
+#adoption .container div .text-box{
     position: relative;
 }
 
-#adoption .info-container .info-box .text-box >h4{
+#adoption .container div .text-box >h4{
     position: absolute;
     top: 0;
-    left: 50.5px;
-    font-size: 24px;
+    left: 42px;
+    font-size: 18px;
     font-weight: 400;
 }
 
-#adoption .info-container .info-box .text-box > .date{
+#adoption .container div .text-box > .date{
     position: absolute;
-    top: 35px;
-    left: 50.5px;
-    font-size: 14px;
+    top: 25px;
+    left: 42px;
+    font-size: 12px;
+    font-weight: 400;
 }
 
-#adoption .info-container .info-box .text-box > p:last-child{
-    margin-top: 20px;
-    width: 320px;
+#adoption .container div .text-box > p:last-child{
+    margin-top: 18px;
+    width: 245px;
     height: 78px;
+    font-size: 14px;
     overflow: hidden;
 }
 
+
+#adoption .title_box{
+    width: 285px;
+    height: 304px;
+    background-color: #FD9347;
+    color: #fff;
+    position: relative;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding-top: 74px;
+    margin-right: 20px;
+}
+
+#adoption .title_box > img{
+    width: 145px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#adoption .title_box h3{
+    position: relative;
+    font-size: 32px;
+    margin-bottom: 15px;
+    z-index: 3;
+}
+
+#adoption .title_box p{
+    position: relative;
+    font-size: 16px;
+    margin-bottom: 40px;
+    z-index: 3;
+}
+
+#adoption .title_box > button{
+    border: none;
+    background: #fff;
+    color: #FD9347;
+    font-size: 16px;
+    padding: 10px 43px;
+    z-index: 10;
+    position: relative;
+}
+
+#adoption .title_box > button:hover{
+    cursor: pointer;
+}
+
 #donation{
+    width: 100%;
+    height: 670px;
+    background-image: url(../images/donation_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+    position: relative;
+}
+
+#donation .container{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#donation .container > h3{
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 35px;
+}
+
+#donation .container > img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#donation .container .text-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+}
+
+#donation .container .text-box:nth-child(3){
+    top: 340px;
+    left: 151px;
+}
+
+#donation .container .text-box:nth-child(4){
+    top: 212.8px;
+    left: 378px;
+}
+
+#donation .container .text-box:nth-child(5){
+    top: 335.9px;
+    left: 684px;
+}
+
+#donation .container .text-box:nth-child(6){
+    top: 213px;
+    left: 880.5px
+}
+
+#donation .container .text-box > p{
+    margin-bottom: 20px;
+}
+
+#donation .container .education > p, #donation .container .support > p{
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+#donation .arrow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+}
+
+#donation .arrow > img{
+    animation-name: donation_arrow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes donation_arrow {
+    50%{
+        transform: translateY(0);
+    }
+
+    80%{
+        transform: translateY(15px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+
+
+#donation-banner{
     width: 100%;
     height: 250px;
     background-image: url(../images/donation-banner.jpg);
@@ -429,18 +704,18 @@ img{
     align-items: center;
 }
 
-#donation .title{
+#donation-banner .title{
     text-align: center;
     color: #fff;
 }
 
-#donation .title > h4{
+#donation-banner .title > h4{
     font-size: 48px;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
-#donation .title > p{
+#donation-banner .title > p{
     font-size: 36px;
     font-weight: 500;
 }
